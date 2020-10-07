@@ -27,4 +27,21 @@ function draw() {
     k--;
     if(k<0) noLoop();
 }
+function reset(){
+    clear();
+    background(0);
+    x=0;
+    y=0;
+    loop();
+}
+function changeIteration(){
+    const val = document.getElementById('iter').value;
+    if(parseInt(val)){
+        k = val;
+        reset();
+    }else{
+        k=1000;
+        reset();
+    }
+}
 
