@@ -10,9 +10,7 @@ function setup() {
     pY = [-1,1]
     background(0);
     frameRate(60);
-    createLoop({duration:10,gif:{
-        download:true
-    }})
+   
 }
 
 function draw() {
