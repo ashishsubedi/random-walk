@@ -9,6 +9,10 @@ function setup() {
     pX = [-1,1]
     pY = [-1,1]
     background(0);
+    frameRate(60);
+    createLoop({duration:10,gif:{
+        download:true
+    }})
 }
 
 function draw() {
